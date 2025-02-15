@@ -1,15 +1,15 @@
 load("@rules_cc//cc:defs.bzl", "cc_test", "cc_binary")
 
 
-cc_test(
-    name = "all_cc_tests",
-    size="small",
-    srcs = glob(["*_test.cc"]),  # Execution de tout les fichiers qui finissent par "_test.cc"
-    deps = [
-        "@googletest//:gtest_main",
-        "//src/lib:CPPLib",
-    ],
-)
+#cc_test(
+#    name = "all_cc_tests",
+#    size="small",
+#    srcs = glob(["*_test.cc"]),  # Execution de tout les fichiers qui finissent par "_test.cc"
+#    deps = [
+#        "@googletest//:gtest_main",
+#        "//src/lib:CPPLib",
+#    ],
+#)
 
 
 cc_test(
@@ -213,7 +213,7 @@ cc_test(
 
 cc_test(
     name = "tests_param_combine_name_generator_test",
-    srcs = ["tests_param_combine_name_generator_test .cc"],
+    srcs = ["tests_param_combine_name_generator_test.cc"],
     size = "small",
     deps = [
         "@googletest//:gtest_main",

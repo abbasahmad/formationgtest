@@ -12,15 +12,17 @@ struct Person {
     }
 
 
-    //APRES UNE PREMIERE EXECUTION et discution avec le formateur, Decommenter les fonctions ci-dessous pour voir la difference.
+    //APRES UNE PREMIERE EXECUTION et discution avec le formateur, 
+    //Decommenter une des fonctions ci-dessous pour voir la difference avec l'une ou l'autre
     //Une fonction "friend" est une fonction qui n'est pas membre d'une classe mais qui a accès aux membres privés et protégés de la classe.
     // Le test Google appellera les fonctions operator<< ou PrintTo pour afficher votre objet.
     // objet. Si les deux sont définies, il utilisera PrintTo.
+
     /*friend std::ostream& operator<<(std::ostream& os, const Person& person) {
       return os << person.DebugString();
-    }
+    }*/
 
-    friend void PrintTo(const Person& person, std::ostream* os) {
+    /*friend void PrintTo(const Person& person, std::ostream* os) {
       *os << person.DebugString();
     }*/
 
@@ -54,5 +56,7 @@ TEST(PersonTest, CanDirectlyAssertEqualityAndPrint) {
     Person p_davey("Davey", 25);
     Person p_bickford("Bickford", 21);
 
-    EXPECT_EQ(p_davey, p_bickford) << PrintToString(p_davey) << p_bickford;
+    //A DECOMMENTER
+
+    //EXPECT_EQ(p_davey, p_bickford) << PrintToString(p_davey) << p_bickford;
 }

@@ -88,7 +88,7 @@ TYPED_TEST_P(MyLibTest, FindMaxHandlesEmpty) {
 // à la suite de tests et leur permettre d'être instanciés plus tard avec
 // différentes implémentations. Sans cette étape, GoogleTest ne pourrait pas
 // lier les tests définis via TYPED_TEST_P avec les types spécifiques.
-REGISTER_TYPED_TEST_SUITE_P(MyLibTest, FindMaxHandlesEmpty,
+REGISTER_TYPED_TEST_SUITE_P(MyLibTest, FindMaxHandlesEmpty
     //Ajouter vos nom de test ici
     //...
 );
