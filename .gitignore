@@ -7,3 +7,4 @@
 /bazel-*
 *.md2
 .vscode
+MODULE.bazel.lock
