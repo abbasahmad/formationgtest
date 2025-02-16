@@ -8,3 +8,4 @@
 *.md2
 .vscode
 MODULE.bazel.lock
+allure-*
