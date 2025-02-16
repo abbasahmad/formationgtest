@@ -1,5 +1,8 @@
 ### 📚 Formation aux Tests Unitaires avec Google Test
 
+
+##### Reamme non complet. Suivre la formation pour mener a bien les exercices.
+
 ## 📌 Introduction
 
 Ce projet est une introduction aux tests unitaires avec **Google Test**. Il est conçu pour accompagner la formation de 3 jours sur les concepts fondamentaux des tests logiciels, la mise en place de l’environnement, et la pratique des tests unitaires avec Google Test et Google Mock.
